@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::view('/', 'dashboard.index')->name('home');
+
+Route::prefix('admin')->group( function() {
+    
 });
